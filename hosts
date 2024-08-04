@@ -1,8 +1,8 @@
-[control_plane]
-control1 ansible_host=control_plane_ip ansible_user=root 
+[master]
+control1 ansible_host=172.19.0.3 ansible_user=root 
 
 [workers]
-worker1 ansible_host=worker_1_ip ansible_user=root
+worker1 ansible_host=172.19.0.2 ansible_user=root
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
